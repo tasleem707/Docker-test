@@ -1,7 +1,7 @@
 steps:
   # Step 1: Build Docker image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/my-repo/my-app', '.']
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/thematic-vertex-463206-a5/tasleem6/myimage:tag1', '.']
 
   # Step 2: Push Docker image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
