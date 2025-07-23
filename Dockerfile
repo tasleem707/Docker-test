@@ -1,4 +1,2 @@
-# syntax=docker/dockerfile:1
-FROM scratch
-ADD hello /
-CMD ["/hello"]
+FROM alpine
+CMD ["echo", "Hello tasleem!!"]
