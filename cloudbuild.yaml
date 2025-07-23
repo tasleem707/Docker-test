@@ -6,3 +6,5 @@ steps:
   # Step 2: Push Docker image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/my-repo/my-app']
+options:
+  logging: CLOUD_LOGGING_ONLY
